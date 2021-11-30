@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title PUG prepros HTML, SCSS prepros SCSS 30 de Noviembre del 2021
+        link(rel="shortcut icon", href="img/logo.png", type="image/png")
+    body 
+        ol(type="I") 
+            li Papas 
+            |
+            |
+            |
+            li Yuca 
+            li Cebolla
+        
+        - let condicion = true;
+        p !{condicion ? "Miguel Angel" : "No cumple la condicion"}
+
+
+        - let obj = {id: "input_nom", type: "text", required: "required"};
+        input#input_nom(
+            type=`${obj.type}`
+            name=""+obj.id
+            style={
+                    color:"red",
+                    "font-size": "20px",
+                    "font-family": "Cursive"
+                }
+        )
